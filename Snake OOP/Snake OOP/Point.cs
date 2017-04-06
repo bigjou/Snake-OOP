@@ -38,6 +38,12 @@ namespace Snake_OOP
             Console.Write(sym);
         }
 
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
         public void Move(int offset, Direction _dir)
         {
             //if (_dir == Direction.Right)
