@@ -62,7 +62,12 @@ namespace Snake_OOP
                 
                 
             }
-            
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.SetCursorPosition(35,10);
+            Console.Write("Game Over");
+            Console.SetCursorPosition(27, 13);
+            Console.Write("Made by Stanislav Mishchenko");
             Console.ReadLine();
         }
     }
