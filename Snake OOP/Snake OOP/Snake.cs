@@ -37,12 +37,36 @@ namespace Snake_OOP
             head.Draw();
         }
 
+       
+
         public Point GetNextPointOfSnake()
         {
             Point head = plist.Last();
             Point nextPont = new Point(head);
             nextPont.Move(1, dir);
             return nextPont;
+        }
+
+        public void ControlMove(ConsoleKey _key)
+        {
+            switch (_key)
+            {
+                case ConsoleKey.LeftArrow :
+                    dir = Direction.Left;
+                    break;
+                case ConsoleKey.RightArrow:
+                    dir = Direction.Right;
+                    break;
+                case ConsoleKey.UpArrow:
+                    dir = Direction.Up;
+                    break;
+                case ConsoleKey.DownArrow:
+                    dir = Direction.Down;
+                    break;
+                default :
+                    dir = Direction.Right;
+                        break;
+            }
         }
     }
 }
