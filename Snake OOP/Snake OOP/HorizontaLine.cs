@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake_OOP
 {
-    class HorizontaLine
+    class HorizontaLine : Figure
     {
-        List<Point> plist;
+        
 
         //konstruktor
         public HorizontaLine(int xLeft, int _y, int xRight, char _sym)
@@ -22,13 +22,7 @@ namespace Snake_OOP
 
         }
 
-        public void Draw()
-        {
-            foreach (Point p in plist)
-            {
-                p.Draw();
-            }
-        }
+        
 
     }
 }

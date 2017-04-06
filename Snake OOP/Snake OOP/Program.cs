@@ -32,12 +32,16 @@ namespace Snake_OOP
             //    p.Draw();
             //}
 
-            HorizontaLine hLine = new HorizontaLine(15,15,20,'+');
-            hLine.Draw();
+            Console.SetBufferSize(80,25);
 
-            VerticalLine vLine = new VerticalLine(5,6,13,'-');
-            vLine.Draw();
-
+            VerticalLine leftLine = new VerticalLine(0,0,24,'+');
+            VerticalLine rightLine = new VerticalLine(78,0,24,'+');
+            HorizontaLine topLine = new HorizontaLine(0,0,78,'+');
+            HorizontaLine downLine = new HorizontaLine(0,24,78,'+');
+            leftLine.Draw();
+            rightLine.Draw();
+            topLine.Draw();
+            downLine.Draw();
             Console.ReadLine();
         }
     }
