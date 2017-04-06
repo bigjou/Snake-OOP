@@ -34,6 +34,7 @@ namespace Snake_OOP
 
             Console.SetBufferSize(80,25);
 
+            //border
             VerticalLine leftLine = new VerticalLine(0,0,24,'+');
             VerticalLine rightLine = new VerticalLine(78,0,24,'+');
             HorizontaLine topLine = new HorizontaLine(0,0,78,'+');
@@ -42,6 +43,14 @@ namespace Snake_OOP
             rightLine.Draw();
             topLine.Draw();
             downLine.Draw();
+
+            //Snake
+
+
+            Point p = new Point(5,5, '*');
+            Snake snake = new Snake(p,4,Direction.Right);
+            snake.Draw();
+
             Console.ReadLine();
         }
     }
