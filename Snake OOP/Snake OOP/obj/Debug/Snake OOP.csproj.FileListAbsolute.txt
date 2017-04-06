@@ -4,3 +4,4 @@ Z:\Portfolio\Snake-OOP\Snake OOP\Snake OOP\bin\Debug\Snake OOP.exe
 Z:\Portfolio\Snake-OOP\Snake OOP\Snake OOP\bin\Debug\Snake OOP.pdb
 Z:\Portfolio\Snake-OOP\Snake OOP\Snake OOP\obj\Debug\Snake OOP.exe
 Z:\Portfolio\Snake-OOP\Snake OOP\Snake OOP\obj\Debug\Snake OOP.pdb
+Z:\Portfolio\Snake-OOP\Snake OOP\Snake OOP\obj\Debug\Snake OOP.csprojResolveAssemblyReference.cache
