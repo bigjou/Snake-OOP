@@ -52,7 +52,14 @@ namespace Snake_OOP
             Point p = new Point(5,5, '*');
             Snake snake = new Snake(p,4,Direction.Right);
             snake.Draw();
-            //snake.Move();
+
+            Food simpleFood = new Food(80,25,'#');
+            Point food1 = simpleFood.CreateFood();
+            food1.Draw();
+
+
+
+
 
             while (true)
             {
