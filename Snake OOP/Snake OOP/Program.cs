@@ -63,13 +63,26 @@ namespace Snake_OOP
 
             while (true)
             {
+                if (snake.Eat(food1))
+                {
+                    food1 = simpleFood.CreateFood();
+                    food1.Draw();
+
+                }
+                else
+                {
+                    snake.Move();
+                }
+                Thread.Sleep(100);
+
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.ControlMove(key.Key);
                 }
-                Thread.Sleep(100);
-                snake.Move();
+
+                
+                
             }
             
             Console.ReadLine();

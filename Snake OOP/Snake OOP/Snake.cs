@@ -68,5 +68,20 @@ namespace Snake_OOP
                         break;
             }
         }
+
+        internal bool Eat(Point food1)
+        {
+
+            Point head = GetNextPointOfSnake();
+            if (head.isHit(food1))
+            {
+                food1.sym = head.sym;
+                plist.Add(food1);
+                //food1.Draw();
+                return true;
+            }
+            else
+                return false;
+        }
     }
 }

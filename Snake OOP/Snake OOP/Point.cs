@@ -11,7 +11,7 @@ namespace Snake_OOP
 
         int x;
         int y;
-        char sym;
+        public char sym;
 
         public Point()
         {
@@ -84,5 +84,10 @@ namespace Snake_OOP
 
         }
 
+
+        internal bool isHit(Point food1)
+        {
+            return food1.x == this.x && food1.y == this.y;
+        }
     }
 }
