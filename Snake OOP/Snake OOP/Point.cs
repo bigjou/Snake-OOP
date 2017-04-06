@@ -46,22 +46,7 @@ namespace Snake_OOP
 
         public void Move(int offset, Direction _dir)
         {
-            //if (_dir == Direction.Right)
-            //{
-            //    x += offset;
-            //}
-            //else if (_dir == Direction.Left)
-            //{
-            //    x -= offset;
-            //}
-            //else if (_dir == Direction.Up)
-            //{
-            //    y -= offset;
-            //}
-            //else if (_dir == Direction.Down)
-            //{
-            //    y += offset;
-            //}
+        
 
             switch (_dir)
             {

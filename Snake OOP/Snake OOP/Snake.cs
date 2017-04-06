@@ -83,5 +83,16 @@ namespace Snake_OOP
             else
                 return false;
         }
+
+        internal bool IsHitTail()
+        {
+            var head = plist.Last();
+            for (int i = 0; i < plist.Count -2;i++ )
+            {
+                if (head.isHit(plist[i]))
+                    return true;
+            }
+            return false;
+        }
     }
 }
